@@ -3,8 +3,6 @@ name: Rust
 on:
   schedule:
     - cron: "0 9 * * 1"
-  push:
-    branches: [ main ]
 
 env:
   CARGO_TERM_COLOR: always
