@@ -11,7 +11,7 @@ RUN cargo build --release
 FROM debian:buster-slim
 
 RUN apt update
-RUN apt install -y openssl
+RUN apt install -y openssl ca-certificates
 RUN rm -rf /var/lib/apt/lists/*
 
 COPY --from=build /source/target/release/wakatime-tweet-activity /usr/local/bin/wakatime-tweet-activity
