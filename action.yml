@@ -1,0 +1,6 @@
+name: WakaTime Tweet Activity
+author: InkoHX
+
+runs:
+  using: docker
+  image: docker://ghcr.io/inkohx/wakatime-tweet-activity:1.0.0

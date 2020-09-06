@@ -16,4 +16,10 @@ RUN rm -rf /var/lib/apt/lists/*
 
 COPY --from=build /source/target/release/wakatime-tweet-activity /usr/local/bin/wakatime-tweet-activity
 
+ENV TWITTER_ACCESS_TOKEN=${TWITTER_ACCESS_TOKEN} \
+  TWITTER_ACCESS_TOKEN_SECRET=${TWITTER_ACCESS_TOKEN_SECRET} \
+  TWITTER_CONSUMER_KEY=${TWITTER_CONSUMER_KEY} \
+  TWITTER_CONSUMER_KEY_SECRET=${TWITTER_CONSUMER_KEY_SECRET} \
+  WAKATIME_API_KEY=${WAKATIME_API_KEY}
+
 ENTRYPOINT [ "wakatime-tweet-activity" ]
