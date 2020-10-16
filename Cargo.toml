@@ -10,5 +10,5 @@ edition = "2018"
 reqwest = { version = "0.10", features = ["json"] }
 tokio = { version = "0.2", features = ["full"] }
 serde = { version = "1.0", features = ["derive"] }
-base64 = "0.12"
+base64 = "0.13"
 egg-mode = "0.15"
