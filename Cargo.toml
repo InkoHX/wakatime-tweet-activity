@@ -11,4 +11,4 @@ reqwest = { version = "0.10", features = ["json"] }
 tokio = { version = "1.4", features = ["full"] }
 serde = { version = "1.0", features = ["derive"] }
 base64 = "0.13"
-egg-mode = "0.15"
+egg-mode = "0.16"
